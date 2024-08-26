@@ -42,19 +42,19 @@ const attachDeleteTaskListeners = () => {
   const deleteButtons = document.querySelectorAll(".delete-task");
 
   deleteButtons.forEach(button => {
-    button.addEventListener("click", (event) => {
-      const index = event.target.getAttribute("data-index");
+      button.addEventListener("click", (event) => {
+          const index = event.target.getAttribute("data-index");
 
-      // Convert index to a number and remove the task from the array
-      const taskIndex = parseInt(index, 10);
-      if (taskIndex > -1) {
-        taskArr.splice(taskIndex, 1);
-      }
+          // Convert index to a number and remove the task from the array
+          const taskIndex = parseInt(index, 10);
+          if (taskIndex > -1) {
+              taskArr.splice(taskIndex, 1);
+          }
 
-      // Immediately update the task list display after deletion
-      displayTasks();
-      console.log("Task deleted at index: " + taskIndex);
-    });
+          // Update the task list display without calling displayTasks()
+          event.target.closest('.task-box').remove(); // Remove the task box directly from the DOM
+          console.log("Task deleted at index: " + taskIndex);
+      });
   });
 };
 
