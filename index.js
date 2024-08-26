@@ -1,8 +1,20 @@
 const addTask = document.querySelector("#add-task");
 const input = document.querySelector("#task-input");
 const tasks = document.querySelector("#task-list");
+const changeBg = document.querySelector("#change-bg");
 
 const taskArr = [];
+
+// Background colors array
+const colorsArr = [
+    { bg: "linear-gradient(rgb(176, 112, 112), #151DB7)", buttonColor: "#B07070" }, 
+    { bg: "linear-gradient(#FF6666, #6600FF)", buttonColor: "#FF6666" }, 
+    { bg: "linear-gradient(black, #151DB7)", buttonColor: "#151DB7" },
+    { bg: "linear-gradient(#006600, #66FF33)", buttonColor: "#006600" }
+];
+
+// To track which backgrounds have been used
+let usedColors = [];
 
 const displayTasks = () => {
   if (input.value === "") {
@@ -58,7 +70,21 @@ const attachDeleteTaskListeners = () => {
   });
 };
 
+const backgroundChanger = () => {
 
+  if (colorsArr.length === 0) {
+    colorsArr.push(...usedColors);
+    usedColors = [];
+  }
 
+  const randomIndex = Math.floor(Math.random() * colorsArr.length); 
+  const selectedColor = colorsArr.splice(randomIndex, 1)[0]; 
 
+  usedColors.push(selectedColor);
 
+  document.body.style.backgroundImage = selectedColor.bg;
+  addTask.style.backgroundColor = selectedColor.buttonColor;
+  console.log("Background applied:", selectedColor.bg);
+}
+
+changeBg.addEventListener("click", backgroundChanger);
