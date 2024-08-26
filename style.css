@@ -168,13 +168,22 @@ i {
     }
     h1{
         position: relative;
-        top: 150px;
+        top: 130px;
     }
     input {
       width: 300px;
       position: relative;
-      top: 60px;
+      top: 95px;
       border-radius: 35px;
+      box-shadow: 0px 2px 5px rgb(0, 0, 0, 0.5); 
+    }
+    #add-task{
+        position: relative;
+        top: 88px;
+    }
+    #change-bg{
+        position: relative;
+        top: 70px;
     }
     h1 {
         font-size: 80px;
