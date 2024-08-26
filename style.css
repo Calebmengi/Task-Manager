@@ -154,9 +154,6 @@ i {
         margin: 0;
         padding: 0;
         overflow: hidden;
-        background: linear-gradient(black, #151DB7);
-        background-repeat: no-repeat;
-        background-size: cover;
     }  
     input {
       width: 300px;
