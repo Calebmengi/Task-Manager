@@ -168,11 +168,12 @@ i {
     }
     h1{
         position: relative;
-        top: 58px;
+        top: 110px;
     }
     input {
       width: 300px;
       position: relative;
+      top: 35px;
       border-radius: 35px;
     }
     h1 {
