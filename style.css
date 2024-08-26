@@ -148,16 +148,24 @@ i {
 }
 
 @media only screen and (max-width: 600px) {
-    body{
+    body, html{
         width: 100%;
         height: 1000vh;
         margin: 0;
         padding: 0;
         overflow: hidden;
     }
+    * {
+    outline: 1px solid red; /* Outline all elements to identify overflow */
+   }
+    body{
+    background: linear-gradient(black, #151DB7);
+    background-repeat: no-repeat;
+    background-size: cover;
+    }    
     .scrollbar-hidden::-webkit-scrollbar {
-  display: none;
-}
+     display: none;
+    }
     input {
       width: 300px;
     }
