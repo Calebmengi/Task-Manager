@@ -181,6 +181,10 @@ i {
         position: relative;
         top: 182px;
     }
+    .task{
+        position: relative;
+        top: 160px
+    }
     #change-bg{
         position: relative;
         top: 190px;
