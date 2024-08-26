@@ -153,6 +153,7 @@ i {
         height: 1000px;
         margin: 0;
         padding: 0;
+        overflow: clip;
     }
     input {
       width: 300px;
