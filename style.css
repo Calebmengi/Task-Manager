@@ -168,18 +168,18 @@ i {
     }
     h1{
         position: relative;
-        top: 230px;
+        top: 0px;
     }
     input {
       width: 300px;
       position: relative;
-      top: 190px;
+      top: 70px;
       border-radius: 35px;
       box-shadow: 0px 2px 5px rgb(0, 0, 0, 0.5); 
     }
     #add-task{
         position: relative;
-        top: 182px;
+        top: 60px;
     }
     .task{
         position: relative;
@@ -187,13 +187,13 @@ i {
     }
     #change-bg{
         position: relative;
-        top: 190px;
+        top: 230px;
     }
     h1 {
         font-size: 80px;
     }
     #task-list {
-        height: 600px;
+        height: 300px;
     }
     .red:active {
         color: red;
