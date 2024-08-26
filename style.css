@@ -179,29 +179,11 @@ i {
         color: rgb(1, 154, 1);
     }
   }
-  @media only screen and (max-width: 400px){
-              width: 100%;
-        height: 1000vh;
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-    }  
-    input {
-      width: 300px;
-    }
-    h1{
-        font-size: 80px;
-        position: relative;
-        top: 20px;
-    }
-    #task-list{
-        height: 200px;
-    }
-    .red:active{
-        color: red;
-    }
-    .green:active{
-        color: rgb(1, 154, 1);
-    }
-  } 
+@media only screen and (max-width: 400px) {
+    width: 100%;
+    height: 1000vh;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
 
