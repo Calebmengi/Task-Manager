@@ -24,7 +24,6 @@ const displayTasks = () => {
 
         <div class="icon-container">
          <i class="fa-solid fa-circle-xmark red delete-task" data-index="${index}"></i>
-         <i class="fa-solid fa-pen-to-square green edit-task" data-index="${index}"></i>
         </div>
       </div>
     </div>`;
