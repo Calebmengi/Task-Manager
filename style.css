@@ -155,6 +155,9 @@ i {
         padding: 0;
         overflow: hidden;
     }  
+    html{
+        overflow: hidden;
+    }
     input {
       width: 300px;
     }
