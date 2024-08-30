@@ -44,7 +44,7 @@ const displayTasks = () => {
   tasks.innerHTML = content;
   input.value = "";
 
-  localStorage.setItem("tasks", taskArr);
+  localStorage.setItem("tasks", taskObj);
   console.log(localStorage.getItem("data"));  // Attach event listeners for delete buttons after the tasks are rendered
   attachDeleteTaskListeners();
 };
