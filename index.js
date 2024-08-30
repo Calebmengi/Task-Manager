@@ -51,6 +51,12 @@ const displayTasks = () => {
 
 addTask.addEventListener("click", displayTasks);
 
+input.addEventListener("keydown", (event) => {
+  if (event.key === "Enter") {
+    displayTasks();
+  }
+});
+
 const attachDeleteTaskListeners = () => {
   const deleteButtons = document.querySelectorAll(".delete-task");
 
